@@ -165,7 +165,7 @@ and should return an array of objects.
       } 
   
   
-  console.log(getLongReviews(reviews));
+  // console.log(getLongReviews(reviews));
 
 /* STRETCH 3:  This challenge is not related to the data above! 
 
@@ -185,7 +185,16 @@ The returned object should have the following characteristics:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
-    
-}
+function carMaker(odometer) {
+    return {
+      "odometer": odometer, 
+      "drive": function(distance) { 
+        this.odometer += distance;}
+    }
+  }
+
+  // let car = carMaker(34);
+  // console.log(car);
+  // car.drive(400);
+  // console.log(car);
+
