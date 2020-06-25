@@ -6,9 +6,25 @@
 
 // /* Task 1a: write a function to return more menu items with the same format as the items above. */
 
-// function createMenuItem(name, cost, category){
-    
-// }
+ function createMenuItem(name, cost, category){
+     return {
+       "name": name,
+       "price": cost,
+       "category": category
+     };
+ }
+
+ let americano = (createMenuItem("Americano", 3, "Drink"));
+
+ console.log(americano);
+
+ let salad = (createMenuItem("Salad", 10, "Lunch"));
+
+ console.log(salad);
+
+ let iceCream = (createMenuItem("Ice Cream", 3, "Desert"));
+
+ console.log(iceCream);
 
   /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
 
