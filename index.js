@@ -65,18 +65,22 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 
 /* Task 3: Console.log just Julius' feedback */
 
-for (let i = 0; i < reviews.length; i++) {
-  if (reviews[i].name === "Julius") {
-    console.log(reviews[i].feedback);
-  }
-}
+// for (let i = 0; i < reviews.length; i++) {
+//   if (reviews[i].name === "Julius") {
+//     console.log(reviews[i].feedback);
+//   }
+// }
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
 reviews.push({name: "Lacey", rating: 5, feedback: "The service was wonderful and the pasta was amazing!"});
 
-console.log(reviews);
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+// console.log(reviews);
+
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
+
+reviews[7].feedback = "Pretty good, but I found a fly in my soup.";
+// console.log(reviews);
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
