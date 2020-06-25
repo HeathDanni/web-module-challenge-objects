@@ -49,7 +49,7 @@ burger.discount =
       } return this.price;
     }
 
-console.log(burger.discount("public"));
+// console.log(burger.discount("public"));
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -80,6 +80,7 @@ reviews.push({name: "Lacey", rating: 5, feedback: "The service was wonderful and
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
 
 reviews[7].feedback = "Pretty good, but I found a fly in my soup.";
+
 // console.log(reviews);
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
@@ -113,7 +114,7 @@ function getLastReview(array) {
     return `${array[array.length - 1].name} gave the restaurant a ${array[array.length - 1].rating} star review and their feedback was: ${array[array.length - 1].feedback}`;
   } 
 
-console.log(getLastReview(reviews));
+// console.log(getLastReview(reviews));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
@@ -129,10 +130,16 @@ console.log(getLastReview(reviews));
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(array, rating) {
+    let ratingArr = [];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i].rating === rating) {
+          ratingArr.push(array[i]);
+        }
+      } return ratingArr;
   }
 
+// console.log(getReviewByRating(reviews, 3.5));
   
 /** STRETCH 2: Write a function called 'getLongestReview' that returns an array containing all reviews longer than 15 words. 
   
