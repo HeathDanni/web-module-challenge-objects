@@ -14,7 +14,9 @@
      };
  }
 
- let americano = (createMenuItem("Americano", 3, "Drink"));
+  /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
+
+  let americano = (createMenuItem("Americano", 3, "Drink"));
 
  console.log(americano);
 
@@ -25,10 +27,6 @@
  let iceCream = (createMenuItem("Ice Cream", 3, "Desert"));
 
  console.log(iceCream);
-
-  /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
-
-
 
 /* Task 2: You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to your burger object that automatically calculates price given a string as a parameter. 
 
